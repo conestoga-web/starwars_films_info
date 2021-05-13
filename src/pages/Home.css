@@ -1,0 +1,13 @@
+.container {
+    height: 100%;
+    display: flex;
+    padding-left: 5%;
+    /* justify-content: left; */
+  }
+  
+  @media screen and (max-width: 1090px) {
+    .movies {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  }

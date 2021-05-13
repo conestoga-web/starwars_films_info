@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Suspense} from 'react';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
+
+//const AppBar = React.lazy(() => import('./components/AppBar'));
+const Home = React.lazy(() => import('./pages/Home'));
+const People = React.lazy(() => import('./pages/People'));
+const PeopleDetail = React.lazy(() => import('./pages/PeopleDetail'));
+const Planets = React.lazy(() => import('./pages/Planets'));
+const PlanetDetail = React.lazy(() => import('./pages/PlanetDetail'));
+const Movies = React.lazy(() => import('./pages/Movies'));
+const MovieDetail = React.lazy(() => import('./pages/MovieDetail'));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback={<div>Welcome, loading...</div>}>
+      <Router>
+        <Route component={Home} path="/" exact={true} />
+        <Route component={People} path="/people" />
+        <Route component={PeopleDetail} path="/person" />  
+        <Route component={Planets} path="/planets" />
+        <Route component={PlanetDetail} path="/planet" />
+        <Route component={Movies} path="/movies" />
+        <Route component={MovieDetail} path="/movie" />
+      </Router>
+    </Suspense>
   );
-}
+};
 
 export default App;
