@@ -19,7 +19,7 @@ function App() {
         <Route component={PeopleDetail} path="/person" />  
         <Route component={Planets} path="/planets" />
         <Route component={PlanetDetail} path="/planet" />
-        <Route component={Movies} path="/movies" exact={true} />
+        <Route component={Movies} path="/starwars_films_info/movies" />
         <Route component={MovieDetail} path="/movie" />
       </Router>
     </Suspense>
