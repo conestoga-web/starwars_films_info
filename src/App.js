@@ -1,5 +1,5 @@
 import React, {Suspense} from 'react';
-import { Route, BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter, Route, BrowserRouter as Router } from 'react-router-dom';
 
 //const AppBar = React.lazy(() => import('./components/AppBar'));
 const Home = React.lazy(() => import('./pages/Home'));
@@ -14,13 +14,15 @@ function App() {
   return (
     <Suspense fallback={<div>Welcome, loading...</div>}>
       <Router basename='/starwars_films_info'>
-        <Route component={Home} path="/" exact={true} />
-        <Route component={People} path="/people" />
-        <Route component={PeopleDetail} path="/person" />  
-        <Route component={Planets} path="/planets" />
-        <Route component={PlanetDetail} path="/planet" />
-        <Route component={Movies} path="/starwars_films_info/movies" />
-        <Route component={MovieDetail} path="/movie" />
+        <HashRouter>
+          <Route component={Home} path="/" exact={true} />
+          <Route component={People} path="/people" />
+          <Route component={PeopleDetail} path="/person" />  
+          <Route component={Planets} path="/planets" />
+          <Route component={PlanetDetail} path="/planet" />
+          <Route component={Movies} path="/starwars_films_info/movies" />
+          <Route component={MovieDetail} path="/movie" />
+        </HashRouter>
       </Router>
     </Suspense>
   );
