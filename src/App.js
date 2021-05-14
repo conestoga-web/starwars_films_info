@@ -14,8 +14,8 @@ function App() {
   return (
     <Suspense fallback={<div>Welcome, loading...</div>}>
       <Router basename={'/starwars_films_info'}>
-        <Route component={Home} path="/" exact={true} />
-        <Route component={People} path="/people" />
+        {/* <Route component={Home} path="/" exact={true} /> */}
+        <Route component={People} path="/" exact={true} />
         <Route component={PeopleDetail} path="/person" />  
         <Route component={Planets} path="/planets" />
         <Route component={PlanetDetail} path="/planet" />
