@@ -26,7 +26,7 @@ export const getPlanets = async () => {
 
     while(morePagesAvailable) {
         currentPage++;
-        const response = await axios.get(`http://swapi.dev/api/planets/?page=${currentPage}`);
+        const response = await axios.get(`https://swapi.dev/api/planets/?page=${currentPage}`);
         //console.log(response.data);
         response.data.results.forEach(e => allData.push(e));
         morePagesAvailable = currentPage < totalPages;
