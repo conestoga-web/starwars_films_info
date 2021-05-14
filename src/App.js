@@ -13,7 +13,7 @@ const MovieDetail = React.lazy(() => import('./pages/MovieDetail'));
 function App() {
   return (
     <Suspense fallback={<div>Welcome, loading...</div>}>
-      <Router basename={window.location.pathname || ''}>
+      <Router basename={window.location.pathname || '/starwars_films_info'}>
         <Route component={Home} path="/" exact={true} />
         <Route component={People} path="/people" />
         <Route component={PeopleDetail} path="/person" />  
