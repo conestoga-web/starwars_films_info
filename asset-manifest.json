@@ -3,8 +3,8 @@
     "static/js/0.07683219.chunk.js": "/starwars_films_info/static/js/0.07683219.chunk.js",
     "static/js/0.07683219.chunk.js.map": "/starwars_films_info/static/js/0.07683219.chunk.js.map",
     "main.css": "/starwars_films_info/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/starwars_films_info/static/js/main.cbd725ef.chunk.js",
-    "main.js.map": "/starwars_films_info/static/js/main.cbd725ef.chunk.js.map",
+    "main.js": "/starwars_films_info/static/js/main.603a07c6.chunk.js",
+    "main.js.map": "/starwars_films_info/static/js/main.603a07c6.chunk.js.map",
     "runtime-main.js": "/starwars_films_info/static/js/runtime-main.619665c4.js",
     "runtime-main.js.map": "/starwars_films_info/static/js/runtime-main.619665c4.js.map",
     "static/js/3.eafafa37.chunk.js": "/starwars_films_info/static/js/3.eafafa37.chunk.js",
@@ -46,6 +46,6 @@
     "static/js/runtime-main.619665c4.js",
     "static/js/3.eafafa37.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.cbd725ef.chunk.js"
+    "static/js/main.603a07c6.chunk.js"
   ]
 }
