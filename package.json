@@ -45,7 +45,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://conestoga-web.github.io/starwars_films_info",
+  "homepage": "https://conestoga-web.github.io/starwars_films_info/",
   "devDependencies": {
     "redux-devtools": "^3.7.0",
     "redux-devtools-extension": "^2.13.9"
