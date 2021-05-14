@@ -28,9 +28,9 @@ function Home() {
                 aria-label="vertical contained primary button group"
                 variant="contained"
             >
-                <Button href="/starwars_films_info/people">People</Button><br />
-                <Button href="/starwars_films_info/movies">Movies</Button><br />
-                <Button href="/starwars_films_info/planets">Planets</Button>
+                <Button href="/people">People</Button><br />
+                <Button href="/movies">Movies</Button><br />
+                <Button href="/planets">Planets</Button>
             </ButtonGroup>
         </div>
       </section>
