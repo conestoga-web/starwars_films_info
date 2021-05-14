@@ -50,7 +50,7 @@ function MovieList({ movieList, loadingMovieList}) {
               <ul className={classes.ul}>
                 <ListSubheader>
                   {/* <MovieItem movie = {movie} id = {sectionId + 1}/> */}
-                  <ListItemLink href={`/movie/${sectionId + 1}`}>
+                  <ListItemLink href={`/starwars_films_info/#/movie/${sectionId + 1}`}>
                   <LocalMoviesIcon style={{ marginRight: "0.5em" }} /><ListItemText primary={movie.title} />
                   </ListItemLink>
                 </ListSubheader>  

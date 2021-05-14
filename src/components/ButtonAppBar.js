@@ -49,10 +49,10 @@ export default function ButtonAppBar({title}) {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            <MenuItem onClick={handleClose}><Link href="/" underline="none">Home</Link></MenuItem>
-            <MenuItem onClick={handleClose}><Link href="/people" underline="none">People</Link></MenuItem>
-            <MenuItem onClick={handleClose}><Link href="/movies" underline="none">Movies</Link></MenuItem>
-            <MenuItem onClick={handleClose}><Link href="/planets" underline="none">Planets</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link href="/starwars_films_info/#/" underline="none">Home</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link href="/starwars_films_info/#/people" underline="none">People</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link href="/starwars_films_info/#/movies" underline="none">Movies</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link href="/starwars_films_info/#/planets" underline="none">Planets</Link></MenuItem>
           </Menu>
           <Typography variant="h6" className={classes.title}>
            {title}

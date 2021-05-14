@@ -50,7 +50,7 @@ function PeopleList({ peopleList, loadingPeopleList}) {
             <ul className={classes.ul}>
               <ListSubheader>
                 {/* <MovieItem movie = {movie} id = {sectionId + 1}/> */}
-                <ListItemLink href={`/person/${sectionId + 1}`}>
+                <ListItemLink href={`/starwars_films_info/#/person/${sectionId + 1}`}>
                   <PersonIcon style={{ marginRight: "0.5em" }} /><ListItemText primary={people.name} />
                 </ListItemLink>
               </ListSubheader>  

@@ -50,7 +50,7 @@ function PlanetList({ planetList, loadingPlanetList}) {
               <ul className={classes.ul}>
                 <ListSubheader>
                   {/* <MovieItem movie = {movie} id = {sectionId + 1}/> */}
-                  <ListItemLink href={`/planet/${sectionId + 1}`}>
+                  <ListItemLink href={`/starwars_films_info/#/planet/${sectionId + 1}`}>
                   <StarIcon style={{ marginRight: "0.5em" }} /><ListItemText primary={planet.name} />
                   </ListItemLink>
                 </ListSubheader>  
