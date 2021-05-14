@@ -22,7 +22,7 @@ export const getPeople = async () => {
 
     while(morePagesAvailable) {
         currentPage++;
-        const response = await axios.get(`http://swapi.dev/api/people/?page=${currentPage}`);
+        const response = await axios.get(`https://swapi.dev/api/people/?page=${currentPage}`);
 
         response.data.results.forEach(e => allData.push(e));
         morePagesAvailable = currentPage < totalPages;

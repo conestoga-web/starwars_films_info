@@ -2,7 +2,7 @@ import React, {Suspense} from 'react';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 
 //const AppBar = React.lazy(() => import('./components/AppBar'));
-const Home = React.lazy(() => import('./pages/Home'));
+//const Home = React.lazy(() => import('./pages/Home'));
 const People = React.lazy(() => import('./pages/People'));
 const PeopleDetail = React.lazy(() => import('./pages/PeopleDetail'));
 const Planets = React.lazy(() => import('./pages/Planets'));
